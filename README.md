@@ -207,4 +207,3 @@ This repository documents my cybersecurity project journey through practical imp
 
 A license file can be added and updated as the repository structure matures.
 
-A license file can be added and updated as the repository structure matures.
