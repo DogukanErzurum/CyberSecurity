@@ -61,7 +61,7 @@ CyberSecurity/
 ├── RESOURCES/
 ├── NOTES/
 └── README.md
-
+```
 ## Additional Project Content
 
 Some projects may also include their own:
@@ -204,5 +204,7 @@ This repository documents my cybersecurity project journey through practical imp
 ---
 
 ## License
+
+A license file can be added and updated as the repository structure matures.
 
 A license file can be added and updated as the repository structure matures.
