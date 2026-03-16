@@ -7,60 +7,140 @@
 ╚═╝      ╚═════╝ ╚═╝  ╚═╝   ╚═╝       ╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝
 ```
 
-[![Cybersecurity Projects](https://img.shields.io/badge/Cybersecurity--Projects-Project%20%237-red?style=flat&logo=github)](https://github.com/CarterPerez-dev/Cybersecurity-Projects/tree/main/PROJECTS/beginner/simple-port-scanner)
+[![CyberSecurity Repository](https://img.shields.io/badge/CyberSecurity-Projects-darkred?style=flat&logo=github)](https://github.com/DogukanErzurum/CyberSecurity)
 [![C++20](https://img.shields.io/badge/C++-20-00599C?style=flat&logo=cplusplus)](https://isocpp.org)
-[![License: AGPLv3](https://img.shields.io/badge/License-AGPL_v3-purple.svg)](https://www.gnu.org/licenses/agpl-3.0)
-[![CMake](https://img.shields.io/badge/CMake-3.31+-064F8C?style=flat&logo=cmake)](https://cmake.org)
+[![Linux](https://img.shields.io/badge/Platform-Linux-black?logo=linux)](https://kernel.org)
+[![CMake](https://img.shields.io/badge/CMake-Build%20System-064F8C?style=flat&logo=cmake)](https://cmake.org)
 
-> Asynchronous TCP port scanner built with C++ and Boost.Asio for high-concurrency network reconnaissance.
+> A collection of cybersecurity projects built to explore networking, security concepts and defensive tooling through hands-on development.
 
-*This is a quick overview — security theory, architecture, and full walkthroughs are in the [learn modules](#learn).*
-> *Developed by [@deniskhud](https://github.com/deniskhud)*
+*This repository focuses on practical implementations rather than theory alone. Detailed explanations and walkthroughs are included within each project.*
 
-## What It Does
+> *Maintained by **Doğukan Erzurum***
 
-- Asynchronous TCP port scanning using Boost.Asio for high concurrency
-- Configurable port ranges from single ports to full 65535 scans
-- Adjustable concurrency level to control scan speed and network load
-- Connection timeout configuration to handle filtered ports gracefully
-- Clean terminal output showing open, closed, and filtered port states
+---
 
-## Quick Start
+# Overview
+
+This repository is designed as a growing cybersecurity project library.
+
+The goal is to build practical security-focused tools and experiments that help deepen understanding of:
+
+- network protocols  
+- system-level security concepts  
+- defensive security tooling  
+- detection and monitoring workflows  
+- security-oriented software development  
+
+Projects will be added progressively and organized by difficulty level as the repository grows.
+
+---
+
+# Current Project
+
+## Simple Port Scanner
+
+A TCP port scanning tool written in **C++** using **Boost.Asio** and **CMake**.
+
+The project demonstrates how asynchronous networking techniques can be used to scan large port ranges efficiently while maintaining controlled concurrency.
+
+### Core Capabilities
+
+- TCP port scanning against remote hosts  
+- Support for custom port ranges  
+- Configurable scan concurrency  
+- Adjustable connection timeout handling  
+- Terminal output for scan results  
+
+---
+
+# Quick Start
+
+Clone the repository and build the project:
 
 ```bash
+git clone https://github.com/DogukanErzurum/CyberSecurity.git
+cd CyberSecurity/simple-port-scanner
 mkdir build && cd build
 cmake ..
 make
+```
+
+Run the scanner:
+
+```bash
 ./simplePortScanner --target 192.168.1.1 --ports 1-1024
 ```
 
-> [!TIP]
-> This project uses [`just`](https://github.com/casey/just) as a command runner. Type `just` to see all available commands.
->
-> Install: `curl -sSf https://just.systems/install.sh | bash -s -- --to ~/.local/bin`
-
-## Building
-
-**Requirements:** C++20 compiler, Boost library, CMake >= 3.31
+Example scans:
 
 ```bash
-./simplePortScanner --target 10.0.0.1 --ports 22,80,443 --concurrency 200
-./simplePortScanner --target 172.16.0.5 --ports 1-65535 --timeout 500
+./simplePortScanner --target 10.0.0.1 --ports 22,80,443
+./simplePortScanner --target 172.16.0.5 --ports 1-65535
 ```
 
-## Learn
+---
 
-This project includes step-by-step learning materials covering security theory, architecture, and implementation.
+# Learning Material
 
-| Module | Topic |
-|--------|-------|
-| [00 - Overview](learn/00-OVERVIEW.md) | Prerequisites and quick start |
-| [01 - Concepts](learn/01-CONCEPTS.md) | Security theory and real-world breaches |
-| [02 - Architecture](learn/02-ARCHITECTURE.md) | System design and data flow |
-| [03 - Implementation](learn/03-IMPLEMENTATION.md) | Code walkthrough |
-| [04 - Challenges](learn/04-CHALLENGES.md) | Extension ideas and exercises |
+Each project in this repository may include a dedicated learning section explaining the concepts behind the implementation.
 
+Typical documentation modules include:
 
-## License
+| Module | Description |
+|------|-------------|
+| Overview | Introduction and prerequisites |
+| Concepts | Security and networking fundamentals |
+| Architecture | Design approach and system flow |
+| Implementation | Code structure and walkthrough |
+| Challenges | Ideas for extending the project |
+
+---
+
+# Project Structure
+
+```bash
+CyberSecurity/
+├── simple-port-scanner
+│   ├── CMakeLists.txt
+│   ├── main.cpp
+│   ├── src
+│   ├── learn
+│   └── README.md
+```
+
+Additional projects will be added over time and grouped by difficulty level.
+
+---
+
+# Requirements
+
+Typical requirements for projects in this repository:
+
+- Linux environment  
+- C++20 compatible compiler  
+- Boost libraries  
+- CMake build system  
+- Git  
+
+---
+
+# Purpose of This Repository
+
+This repository is intended as a personal cybersecurity learning lab and development portfolio.
+
+By building tools from scratch, the aim is to gain deeper insight into how security technologies work at a technical level rather than relying only on existing tools.
+
+---
+
+# Author
+
+**Doğukan Erzurum**
+
+Cybersecurity learner and developer focusing on practical experimentation, network security and low-level system understanding.
+
+---
+
+# License
 
 AGPL 3.0
