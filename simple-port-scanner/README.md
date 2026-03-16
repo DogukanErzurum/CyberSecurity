@@ -137,10 +137,6 @@ By building tools from scratch, the aim is to gain deeper insight into how secur
 
 **Doğukan Erzurum**
 
-Cybersecurity learner and developer focusing on practical experimentation, network security and low-level system understanding.
 
 ---
 
-# License
-
-AGPL 3.0
