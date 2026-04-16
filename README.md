@@ -77,7 +77,6 @@ CyberSecurity/
 │   ├── beginner/
 │   ├── intermediate/
 │   └── advanced/
-├── RESOURCES/
 ├── NOTES/
 └── README.md
 ```
