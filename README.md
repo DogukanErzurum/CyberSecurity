@@ -24,6 +24,7 @@
 | Project | Info | What You'll Learn |
 |--------|------|------------------|
 | **[Simple Port Scanner](./simple-port-scanner)** | ![C++](https://img.shields.io/badge/C%2B%2B-00599C?logo=cplusplus) ![Linux](https://img.shields.io/badge/Linux-black?logo=linux) ![Beginner](https://img.shields.io/badge/Level-Beginner-green) | TCP socket basics • Port scanning fundamentals • Network reconnaissance concepts |
+| **[Simple Vulnerability Scanner](./simple-vulnerability-scanner)** | ![Go](https://img.shields.io/badge/Go-00ADD8?logo=go) ![CLI](https://img.shields.io/badge/CLI-Tool-black) ![Beginner](https://img.shields.io/badge/Level-Beginner-green) | Dependency scanning • Vulnerability detection (OSV) • Secure dependency updates • CLI tool development |
 
 ---
 
